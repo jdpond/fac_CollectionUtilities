@@ -3,15 +3,15 @@
 This is a set of utilities that facilitate the creation and use of Salesforce Collections (Lists)
 
 They include:
-- **fac_CompareLists** - Compare two lists returning A list of those added to the first and a list of those deleted From the first
+- **fac_CompareLists** - Compare two lists returning 2 lists; a list of those added to the first and a list of those deleted From the first
 - **fac_FilterCollection** - An "IN"-like query to filter a collection of objects
-- **fac_GetPicklistFromObjects** - Returns a list of strings from designated Field in object collection given the object collection and name of the field  value to be added to list
-- **fac_GetRecordsIn** - Perform a query using the "IN" condition of the WHERE clause
+- **fac_GetListFromObjectsField** - Returns a list of strings from designated Field in object collection given the object collection and name of the field  value to be added to list
+- **fac_GetRecordsIn** - Perform an SOQL (getRecord) query using the "IN" condition of the WHERE clause
 
 
 ## fac_CompareLists
 
-Compare two lists returning A list of those added to the first and a list of those deleted From the first
+Compare two lists returning 2 lists; a list of those added to the first and a list of those deleted From the first
 
 Parameters:
 
@@ -34,7 +34,7 @@ An "IN"-like query to filter a collection of objects
 * Response
 1. > **Object Collection Returned** - The collection of objects matched in the Values Collection
 
-## fac_GetPicklistStringFromObjects
+## fac_GetListFromObjectsField
 
 Returns a list of strings from designated Field value in object collection
 
@@ -46,7 +46,7 @@ Returns a list of strings from designated Field value in object collection
 
 ## fac_GetRecordsIn
 
-Perform a query using the "IN" condition of the WHERE clause
+Perform an SOQL (getRecord) query using the "IN" condition of the WHERE clause
 
 * Request
 > 1. **Query Field Collection** - The collection of Developer Field Names to be queried

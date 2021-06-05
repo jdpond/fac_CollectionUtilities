@@ -1,15 +1,15 @@
 /**
- * @description       : fac_GetRecordsIn - Perform a query using the "IN" condition of the WHERE clause
+ * @description       : fac_GetRecordsIn - Perform an SOQL (getRecord) query using the "IN" condition of the WHERE clause
  * @author            : Jack D. Pond
  * @group             : 
- * @last modified on  : 06-04-2021
+ * @last modified on  : 06-05-2021
  * @last modified by  : Jack D. Pond
  * Modifications Log 
  * Ver   Date         Author         Modification
  * 1.0   06-01-2021   Jack D. Pond   Initial Version
 **/
 public with sharing class fac_GetRecordsIn {
-    @invocableMethod(label='fac_GetRecordsIn' description='Perform a query using the "IN" condition of the WHERE clause' category='FAC Utilities')
+    @invocableMethod(label='fac_GetRecordsIn' description='Perform an SOQL (getRecord) query using the "IN" condition of the WHERE clause' category='FAC Utilities')
     public static List<Response> fac_GetRecordsIn(List<Request> requests) {
         List<Response> responseList = new List<Response>();
         for (Request curRequest : requests) {
