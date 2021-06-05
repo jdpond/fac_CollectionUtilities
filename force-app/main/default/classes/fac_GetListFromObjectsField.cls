@@ -1,18 +1,18 @@
 /**
- * @description       : fac_GetPicklistFromObjects - Returns a list of strings from designated Field value in object collection
+ * @description       : fac_GetListFromObjectsField - Returns a list of strings from designated Field value in object collection
  *                      given the object collection and name of the field to be added to list
  * @author            : Jack D. Pond
  * @group             : 
- * @last modified on  : 06-04-2021
+ * @last modified on  : 06-05-2021
  * @last modified by  : Jack D. Pond
  * Modifications Log 
  * Ver   Date         Author         Modification
  * 1.0   06-01-2021   Jack D. Pond   Initial Version
 **/
 
-public with sharing class fac_GetPicklistFromObjects {
-    @invocableMethod(label='fac_GetPicklistStringFromObjects' description='Returns a list of strings from designated Field value in object collection' category='FAC Utilities')
-    public static List<Response> fac_GetPicklistFromObjects(List<Request> requests) {
+public with sharing class fac_GetListFromObjectsField {
+    @invocableMethod(label='fac_GetListFromObjectsField' description='Returns a list of strings from designated Field value in object collection' category='FAC Utilities')
+    public static List<Response> fac_GetListFromObjectsField(List<Request> requests) {
         List<Response> responseList = new List<Response>();
         for (Request curRequest : requests) {
             List<String> thisResponseList = new List<String>();
