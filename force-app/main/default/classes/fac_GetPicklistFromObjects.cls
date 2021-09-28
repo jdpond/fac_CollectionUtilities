@@ -1,5 +1,5 @@
 /**
- * @description       : fac_GetListFromObjectsField - Returns a list of strings from designated Field value in object collection
+ * @description       : fac_GetPicklistFromObjects - Returns a list of strings from designated Field value in object collection
  *                      given the object collection and name of the field to be added to list
  * @author            : Jack D. Pond
  * @group             :
@@ -11,13 +11,13 @@
  * 1.0   2021-09-25   Jack D. Pond   Bug correction for empty "fromObjects" parameter
  **/
 
-public with sharing class fac_GetListFromObjectsField {
+public with sharing class fac_GetPicklistFromObjects {
   @invocableMethod(
-    label='fac_GetListFromObjectsField'
+    label='fac_GetPicklistStringFromObjects'
     description='Returns a list of strings from designated Field value in object collection'
     category='FAC Utilities'
   )
-  public static List<Response> fac_GetListFromObjectsField(
+  public static List<Response> fac_GetPicklistFromObjects(
     List<Request> requests
   ) {
     List<Response> responseList = new List<Response>();
